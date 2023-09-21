@@ -5,7 +5,7 @@
 // 20 мин
 
 Console.WriteLine("Введи номер дня недели");
-string day = (Console.ReadLine());
+string day = Console.ReadLine();
 if (day == "1")
 {
     Console.WriteLine("Понедельник");
