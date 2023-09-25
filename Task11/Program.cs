@@ -15,7 +15,7 @@ int DeleteSecondDigit(int num)
 Console.WriteLine("Введите трёхзначное число");
 int number = Convert.ToInt32(Console.ReadLine());
 
-// int firstDigit = number / 100;
+// int firstDigit = number / 100; w
 // int thirdDigit = number % 10;
 // int result = firstDigit * 10 + thirdDigit;
 int result = DeleteSecondDigit(number);
