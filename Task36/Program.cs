@@ -20,7 +20,7 @@ int SumOddPos(int[] arr)
 {
     int sum = 0;
 
-    for (int i = 0; i < arr.Length; i = i+2) // i = 1, если позиции считаются с 0 ? 
+    for (int i = 1; i < arr.Length; i = i+2) // i = 1,  позиции считаются с 0  
     {
         sum = sum + arr[i];
         // Console.Write($"{arr[i]}, "); // Выводит список считаемых цифр для проверки пользователем.
