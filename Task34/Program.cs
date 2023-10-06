@@ -2,7 +2,7 @@
 //  Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-int[] CreateArrarRandom(int size, int min, int max)
+int[] CreateArrayRandom(int size, int min, int max)
 {
     int[] arr = new int[size];
     Random rnd = new Random();
@@ -35,7 +35,7 @@ void PrintArray(int[] arr)
     Console.WriteLine("]");
 }
 
-int[] array = CreateArrarRandom(10, 100, 999);
+int[] array = CreateArrayRandom(10, 100, 999);
 PrintArray(array);
 int result = CountEvenElem(array);
-Console.WriteLine($" Количество положительных элементов в данном массиве равна {result}");
+Console.WriteLine($"Количество положительных элементов в данном массиве равна {result}");
