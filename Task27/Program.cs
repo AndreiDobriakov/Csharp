@@ -9,3 +9,20 @@ int GetUserInput(string str)
     int num = Convert.ToInt32(Console.ReadLine());
     return num;
 }
+
+int SumNumber(int number)
+{
+    int sum = 0;
+    while (number != 0)
+    {
+        sum += number % 10;
+        number = number / 10;
+    }
+    return sum;
+}
+
+
+int number = GetUserInput("Enter a number");
+int sumNumber = SumNumber(number);
+
+Console.WriteLine($"Сумма цыфр числа {number} равно {sumNumber}");
