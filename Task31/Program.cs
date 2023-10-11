@@ -6,14 +6,15 @@
 // -20.
 
 
-int[] CreateArrarRndint(int size, int min, int max)
+int[] CreateArray(int size, int min, int max)
 {
+Console.Write("Введите количество элементов в массиве: ");
+    
     int[] arr = new int[size];
-    Random rnd = new Random();
 
     for (int i = 0; i < size; i++)
     {
-        arr[i] = rnd.Next(min, max + 1);
+        arr[i] = ;
     }
 
     return arr;
@@ -24,7 +25,7 @@ void PrintArray(int[] arr)
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        if(i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
         else Console.Write($"{arr[i]}");
     }
     Console.WriteLine("]");
@@ -37,20 +38,20 @@ int[] GetSumPositiveNegativeElem(int[] arr)
 
     for (int i = 0; i < arr.Length; i++)
     {
-        if(arr[i] > 0) sumPositive += arr[i];
+        if (arr[i] > 0) sumPositive += arr[i];
         else sumNegative += arr[i];
     }
 
-    return new int[] {sumPositive, sumNegative};
+    return new int[] { sumPositive, sumNegative };
 }
 
 int GetSumPositiveElem(int[] arr)
 {
-    int sum = 0; 
+    int sum = 0;
 
     for (int i = 0; i < arr.Length; i++)
     {
-        if(arr[i] > 0) sum += arr[i];
+        if (arr[i] > 0) sum += arr[i];
     }
 
     return sum;
@@ -58,13 +59,13 @@ int GetSumPositiveElem(int[] arr)
 
 int GetSumNegativeElem(int[] arr)
 {
-    int sum = 0; 
+    int sum = 0;
 
     for (int i = 0; i < arr.Length; i++)
     {
-        if(arr[i] < 0) sum += arr[i];
+        if (arr[i] < 0) sum += arr[i];
     }
-    
+
     return sum;
 }
 
