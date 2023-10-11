@@ -19,6 +19,6 @@ if (k1 != k2)
 {
 double x = (b2-b1)/(k1-k2);
 double y = k1 * x + b1;
-Console.WriteLine($"Точка пересечения ({x},{y})");
+Console.WriteLine($"Точка пересечения ({x:F2},{y:F2})");
 }
 else Console.WriteLine("Данные прямые параллельны и не пересекаются");
